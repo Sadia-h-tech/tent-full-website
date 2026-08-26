@@ -28,6 +28,7 @@ header {
   }
 }
 .global {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -134,25 +135,26 @@ header {
     flex-direction: column;
     gap: 10px;
 
-   h2{
-    font-size: 36px;
-   }
-   button{
-    width: 180px;
-    margin-top: 20px;
-    padding: 7px 0;
-    border: none;
-    border-radius: 10px;
-    background-color: #122C89;
-    color: white;
-    font-size: 18px;
-   }
-}
+    h2 {
+      font-size: 36px;
+    }
+    button {
+      width: 180px;
+      margin-top: 20px;
+      padding: 7px 0;
+      border: none;
+      border-radius: 10px;
+      background-color: #122c89;
+      color: white;
+      font-size: 18px;
+    }
+  }
 }
 
-footer{
-  width: 100%; height: 300px;
-  background-color: #121A31;
+footer {
+  width: 100%;
+  height: 300px;
+  background-color: #121a31;
   margin-top: 30px;
   padding-top: 20px;
   border-top-left-radius: 20px;
@@ -161,3 +163,297 @@ footer{
   justify-content: space-around;
   color: white;
 }
+
+@media (min-width: 567px) and (max-width: 768px) {
+  header{
+   width: 100%;
+    img{
+      width: 80px;
+    }
+    ul{
+      display: flex;
+      gap: 25px;
+      font-size: 12px;
+    }
+  }
+  .global {
+    h1 {
+      font-size: 30px;
+      text-align: center;
+    }
+    p {
+      font-size: 80%;
+      text-align: center;
+    }
+    button {
+      transform: scale(0.75);
+    }
+  }
+  .more {
+    width: 100%;
+    /* height: 600px; */
+    max-width: 768px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    .marketing {
+      width: 50%;
+      h1 {
+        font-size: 20px !important;
+      }
+      p {
+        font-size: 10px !important;
+      }
+    }
+    img {
+      width: 350px !important;
+      height: 300px !important;
+    }
+  }
+  .main {
+    .hadder {
+      h1 {
+        font-size: 25px !important;
+      }
+      pre {
+        font-size: 15px !important;
+      }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    .container{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .upper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+   .upper-left{
+    p{
+      font-size: 20px;
+    }
+    h1{
+      font-size: 35px !important;
+    }
+   }
+   .right-img{
+    img{
+      width: 350px;
+      object-fit: cover;
+    }
+   }
+  }
+.last-container{
+  img{
+    width: 350px !important;
+    object-fit: cover;
+  }
+  h2{
+    font-size: 15px !important;
+  }
+}
+}
+
+@media (min-width: 320px) and (max-width:566px){
+
+  header{
+   width: 100%;
+   padding: 20px;
+   display: flex;
+   justify-content: space-between;
+  img{
+    width: 40px;
+  }
+  ul{
+    display: none;
+  }
+  }
+
+  .global{
+    text-align: center;
+    h1{
+      font-size: 20px;
+    }
+    p{
+      font-size: 12px;
+    }
+    button{
+      transform: scale(0.75);
+    }
+  }
+  .more{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   .marketing{
+    h1{
+      font-size: 20px !important;
+    }
+    p{
+      font-size: 12px;
+    }
+   button{
+    transform: scale(0.75);
+   }
+  }
+  img{
+    width: 245px !important;
+    object-fit: cover;
+  }
+  }
+  
+    .hadder{
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+     h1{
+      font-size: 20px !important;
+     }
+     pre{
+      width: 95%;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+     }
+    }
+    .container{
+      display: flex;
+      flex-direction: column;
+    }
+  
+
+  .main2{
+    h1{
+      font-size: 20px !important;
+    }
+    button{
+      transform: scale(0.75);
+      box-sizing: border-box;
+    }
+  }
+.upper{
+  margin-top: 0;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  .upper-left{
+    margin-top: 0;
+   padding: 10px;
+    h1{
+      font-size: 20px !important;
+    }
+  }
+  button{
+transform: scale(0.85) !important;
+  } 
+}
+.right-img{
+  img{
+    width: 250px;
+  object-fit: cover;
+  }
+}
+
+.last-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img{
+  width: 250px !important;
+  object-fit: cover;
+  }
+   h2{
+    font-size: 15px !important;
+  }
+}
+footer{
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  pre{
+       white-space: pre-wrap;
+      overflow-wrap: anywhere;
+  }
+}
+}
+
+@media (max-width:1360px){
+   header{
+    width: 100%;
+    
+    ul{
+      font-size: 12px;
+      gap: 12px;
+    }
+   }
+   .global{
+    text-align: center;
+   }
+
+   .more{
+
+    .marketing{
+    
+    }
+    img{
+      width: 400px !important;
+      object-fit: cover;
+    }
+   }
+   .main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+   }
+   .hadder{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    h1{
+      width: 35%;
+      font-size: 35px !important;
+    }
+    /* white-space: pre-wrap; */
+    overflow-wrap: anywhere;
+   }
+  .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  .container img{
+    display: flex;
+    justify-content: center;
+    }
+    .upper{
+      .upper-left{
+        h1{
+          font-size: 40px !important;
+        }
+      }
+      img{
+        width: 350px;
+        object-fit: cover;
+      }
+    }
+    .last-container{
+      img{
+        width: 350px !important;
+        object-fit: cover;
+      }
+    }
+}
+
+
