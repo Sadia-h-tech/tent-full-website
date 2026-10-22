@@ -9,6 +9,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <style>button:hover{
+        transform: scale(1.08);
+    }
+    </style>
   </head>
   <body>
     <header>
@@ -17,16 +21,15 @@
         alt
       />
       <ul class="nav-links">
-        <li>HOME</li>
-        <li>OUR TEAM</li>
-        <li>SERVICES</li>
-        <li>OUE WORKS</li>
-        <li>CAREER</li>
-        <li>CONTACT US</li>
+        <li class="link-home">HOME</li>
+        <li class="link-services">SERVICES</li>
+        <li class="link-work">OUR WORKS</li>
+        <li class="link-team">OUR TEAM</li>
+        <li class="link-contact">CONTACT US</li>
       </ul>
       <div class="icon">
         <i class="fa-solid fa-bars"></i>
-           <span class="cross">✖</span>
+        <span class="cross">✖</span>
       </div>
     </header>
     <div class="global">
@@ -171,10 +174,13 @@ strategies.</pre>
           font-family: Arial, Helvetica, sans-serif;
           font-size: 20px;
           cursor: pointer;
+          transition: all 0.2s linear;
         "
+        
       >
         MEET OUR FULL TEAM
       </button>
+  
     </div>
 
     <br />
@@ -199,13 +205,15 @@ strategies.</pre>
           <br />
           <button
             style="
+            width: 150px;
               padding: 10px 30px;
               border: none;
               border-radius: 10px;
               color: white;
+              font-weight: 600;
               background-color: #122c89;
-              transform: scale(1.2);
               margin-left: 15px;
+              transition: all 0.2s linear;
             "
           >
             BOOK A CALL
@@ -242,7 +250,7 @@ strategies.</pre>
         <button>GET A QUOTA</button>
       </div>
     </div>
-    <footer>
+    <footer class="contact">
       <div>
         <h1>The world of Limitless Creativity.</h1>
         <p style="margin-top: 45px">Contact Us</p>
@@ -259,6 +267,7 @@ strategies.</pre>
             border-radius: 10px;
             font-size: 23px;
             color: #122c89;
+            transition: all 0.2s linear;
           "
         >
           Massege Us
